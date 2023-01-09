@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ganak"></div>
+        <div class="login">
+            <div class="inputf">
+                <h2>Login Form</h2>
+            </div>
+            <div class="userpass">
+                <input type="email" placeholder="Email Id">
+                <input type="password" placeholder="Password">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="signup">
+                <div class="checkbox">
+                    <input type="checkbox" name="remember me" id="">Remember me
+                </div>
+                <div class="forgetpass">
+                    <a href="#">Forget Password</a>
+                </div>
+                <div class="signin">
+                    <h4 class="signwith">Or Sign in with</h4>
+                    <img src="google1.png" alt="facebook" height="50px" width="auto">
+                    <img src="facebook1.png" alt="google"  height="50px" width="auto">
+                    <img src="twitter1.png" alt="twitter"  height="50px" width="auto">
+                </div>
+            </div>
+        </div>
+        <div class="ganak"></div>        
+    </div>
+    <style>
+        ::placeholder{
+            color: black;
+            opacity: 1;
+            text-decoration: solid;
+        }
+        body{
+            background-image: url("login.jpg");
+            background-size: 1580px 780px;
+        }
+        .inputf h2{
+            color: rgb(0, 0, 0);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 100px 400px 1fr;
+                  
+            grid-template-areas: ". login .";
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .login{
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 280px;
+            grid-gap: 20px;
+            background-color: rgba(128, 128, 128, 0.765);
+            padding: 20px;
+            border-radius: 20px;
+            
+        }
+        .userpass{
+            justify-content: center;
+            align-items: flex-start;
+            display: grid;
+            grid-gap: 10px;
+        }
+        .userpass input[type=email]{
+            width: auto;
+            padding: 12px 40px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: transparent;
+            border-radius: 50px;
+            text-decoration: black;
+        }
+        .userpass input[type=password]{
+            width: auto;
+            padding: 12px 40px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: transparent;
+            border-radius: 50px;
+            color: black;
+        }
+        .userpass button{            
+            color: rgb(0, 0, 0);
+            padding: 15px 75px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50px;
+            transition-duration: 0.2s;
+            background-color: rgba(226, 156, 43, 0.767);
+        }
+        .userpass button:hover{
+            background-color: rgba(15, 187, 187, 0.735);
+            color: white;
+        }
+        .signup{
+            display: grid;
+            grid-template-columns: 1fr 1fr;  
+            grid-gap: 10px;   
+            justify-content: center;
+            align-content: center;       
+        }
+        .signup .forgetpass a{
+            color: black;
+        }
+        
+        .forgetpass{
+            text-align: right ;
+        }
+        .signin{            
+            grid-row: 2/3;
+            grid-column: 1/span2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+        .signin .signwith{
+            grid-column: 1/span 3;
+            justify-content: center;
+            align-items: center;
+        }
+        .signin img{
+            border-radius: 50%;
+            
+        }
+    </style>
+</body>
+</html>
